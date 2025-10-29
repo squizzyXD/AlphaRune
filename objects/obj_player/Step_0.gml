@@ -17,6 +17,7 @@ yspd = (down_key - up_key) * move_spd
 
 
 //collisions
+
 if(place_meeting(x + xspd, y, obj_collider)){
 	
 	xspd = 0
