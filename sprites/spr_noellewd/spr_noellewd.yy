@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Noelle",
-    "path":"folders/Sprites/Noelle.yy",
+    "path":"folders/Sprites/player/Noelle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
