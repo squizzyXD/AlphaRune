@@ -43,6 +43,7 @@
     {"id":{"name":"rm_bedroom","path":"rooms/rm_bedroom/rm_bedroom.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
+    {"id":{"name":"spr_hometowntiles","path":"sprites/spr_hometowntiles/spr_hometowntiles.yy",},},
     {"id":{"name":"spr_house_1","path":"sprites/spr_house_1/spr_house_1.yy",},},
     {"id":{"name":"spr_noellewd","path":"sprites/spr_noellewd/spr_noellewd.yy",},},
     {"id":{"name":"spr_noellewl","path":"sprites/spr_noellewl/spr_noellewl.yy",},},
