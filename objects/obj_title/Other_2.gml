@@ -15,12 +15,20 @@ global.rm5 = 5
 
 if((file_exists("Alpharune.ini"))){
 
-ini_open("Alpharune.ini")
-global.start_room = ini_read_string("Save1", "room", rm_hallway)
-global.start_x = ini_read_real("Save1", "x", 163)
-global.start_y = ini_read_real("Save1", "y", 154)
-ini_close()
+	instance_create_depth(5, 51, 50, obj_buttons_continue)
+
+	ini_open("Alpharune.ini")
+	global.start_room = ini_read_string("Save1", "room", rm_hallway)
+	global.start_x = ini_read_real("Save1", "x", 163)
+	global.start_y = ini_read_real("Save1", "y", 154)
+	ini_close()
+	
+} else{
+
+instance_create_depth(5, 51, 100, obj_buttons)
+
 }
+
 //ADD MORE HERE IF NEEDED
 if(global.start_room = 0){
 	

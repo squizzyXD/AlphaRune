@@ -42,6 +42,7 @@
   },
   "name":"Diddyrune",
   "resources":[
+    {"id":{"name":"obj_buttons_continue","path":"objects/obj_buttons_continue/obj_buttons_continue.yy",},},
     {"id":{"name":"obj_buttons","path":"objects/obj_buttons/obj_buttons.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
