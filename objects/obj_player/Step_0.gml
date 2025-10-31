@@ -54,3 +54,22 @@ if(xspd !=  0 or yspd != 0){
 //dont shake
 x[0] = round(x[0.1]);
 y[0] = round(y[0.1]);
+
+//keep track of which direction player is facing 
+//down
+if(sprite_index = spr_noellewd){
+	facing_direction = 2
+}
+//up
+if(sprite_index = spr_noellewu){
+	facing_direction = 3
+}
+//right
+if(sprite_index = spr_noellewr){
+	facing_direction = 0
+}
+//left
+if(sprite_index = spr_noellewl){
+	facing_direction =1
+}
+
