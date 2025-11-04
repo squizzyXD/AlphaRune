@@ -55,6 +55,7 @@
     {"id":{"name":"rm_large","path":"rooms/rm_large/rm_large.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
+    {"id":{"name":"scr_updatecontrols","path":"scripts/scr_updatecontrols/scr_updatecontrols.yy",},},
     {"id":{"name":"spr_buttons_continue","path":"sprites/spr_buttons_continue/spr_buttons_continue.yy",},},
     {"id":{"name":"spr_buttons","path":"sprites/spr_buttons/spr_buttons.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},

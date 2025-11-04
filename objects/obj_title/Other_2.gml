@@ -5,6 +5,18 @@ global.start_y = 154
 global.new_game = false
 global.title_buttons = false
 
+//control defaults
+global.selectbutton = ord("Z")
+global.cancelbutton = ord("X")
+global.sprintbutton = ord("X")
+global.upbutton = ord("W")
+global.downbutton = ord("S")
+global.leftbutton = ord("A")
+global.rightbutton = ord("D")
+
+
+
+
 
 //room ids
 global.rm0 = 0
