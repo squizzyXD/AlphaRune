@@ -5,6 +5,7 @@ global.start_y = 154
 global.new_game = false
 global.title_buttons = false
 
+
 //room ids
 global.rm0 = 0
 global.rm1 = 1
