@@ -18,3 +18,29 @@ ini_open("Alpharune.ini")
 	
 	}
 }
+
+//controls
+if global.downbuttonpressed1{
+	selected++
+}
+if global.upbuttonpressed1{
+	selected--	
+}
+
+if menu = 1{
+	if selected < 0{
+		selected = 2
+	}
+	if selected > 2{
+	selected = 0	
+	}
+}
+
+if menu = 2{
+	if selected < 0{
+		selected = 1
+	}
+	if selected > 1{
+	selected = 0	
+	}
+}

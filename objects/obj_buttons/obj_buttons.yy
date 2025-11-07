@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_buttons",
-    "path":"sprites/spr_buttons/spr_buttons.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
