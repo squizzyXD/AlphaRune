@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"mSfx",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"mSfx",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -30,13 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_noellewd",
-    "path":"sprites/spr_noellewd/spr_noellewd.yy",
-  },
-  "spriteMaskId":{
-    "name":"spr_noellewd",
-    "path":"sprites/spr_noellewd/spr_noellewd.yy",
-  },
-  "visible":true,
+  "spriteId":null,
+  "spriteMaskId":null,
+  "visible":false,
 }

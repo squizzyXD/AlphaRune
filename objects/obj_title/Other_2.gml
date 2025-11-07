@@ -60,3 +60,9 @@ if(global.start_room = 2){
 	global.start_room = rm_hallway
 	
 }
+
+with(mControl){
+	registerControl("title", true);
+	registerControl("player", false);
+	registerControl("dialogue", false);
+}

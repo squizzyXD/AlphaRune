@@ -3,9 +3,3 @@ switch(room) {
         current_music = audio_play_sound(sngBeginning, 1, true);
         break;
 }
-switch(room)
-{
-    case rm_hallway:  // <- Use the actual room name from your resource tree
-        current_music = audio_play_sound(sngBeginning, 1, true);
-        break;
-}
