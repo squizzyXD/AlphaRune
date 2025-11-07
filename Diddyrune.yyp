@@ -42,6 +42,7 @@
   },
   "name":"Diddyrune",
   "resources":[
+    {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"obj_buttons_continue","path":"objects/obj_buttons_continue/obj_buttons_continue.yy",},},
     {"id":{"name":"obj_buttons","path":"objects/obj_buttons/obj_buttons.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
@@ -57,6 +58,8 @@
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"scr_updatecontrols","path":"scripts/scr_updatecontrols/scr_updatecontrols.yy",},},
+    {"id":{"name":"spr_buttons_continue","path":"sprites/spr_buttons_continue/spr_buttons_continue.yy",},},
+    {"id":{"name":"spr_buttons","path":"sprites/spr_buttons/spr_buttons.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
     {"id":{"name":"spr_fade","path":"sprites/spr_fade/spr_fade.yy",},},
     {"id":{"name":"spr_hometowntiles","path":"sprites/spr_hometowntiles/spr_hometowntiles.yy",},},

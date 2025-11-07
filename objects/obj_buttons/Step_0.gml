@@ -1,12 +1,13 @@
+//menu1
+if menu = 1{
+
 //start save
+if(selected = 0 and global.selectbuttonpressed){
 ini_open("Alpharune.ini")
-if(image_index = 0 and global.selectbuttonpressed){
 
 	room_goto(global.start_room)
 	var instantiated = instance_create_layer(global.start_x, global.start_y, "Player", obj_player)
 	global.new_game = false
-
-
 
 	}	
 	
@@ -16,8 +17,4 @@ if(image_index = 0 and global.selectbuttonpressed){
 		selected = 0
 	
 	}
-
-
-//controls
-
-
+}

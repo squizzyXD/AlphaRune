@@ -8,22 +8,7 @@ if selected = 0 {
 } else{
 	draw_set_colour(c_white)
 }
-draw_text(x, y,"Start Gam")
+draw_text(x, y,"Start Game")
 	
 }
-if selected = 1 {
-	draw_set_colour(#8781BE)
-} else{
-	draw_set_colour(c_white)
-}
-draw_text(x, y + 30,"Settings")
 
-if selected = 2 {
-	draw_set_colour(#8781BE)
-} else{
-	draw_set_colour(c_white)
-}
-draw_text(x, y + 60,"Extras")
-	
-
-	
