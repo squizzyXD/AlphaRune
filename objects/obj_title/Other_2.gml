@@ -9,13 +9,15 @@ global.title_buttons = false
 global.selectbutton = ord("Z")
 global.cancelbutton = ord("X")
 global.sprintbutton = ord("X")
+global.menubutton = ord("C")
 global.upbutton = ord("W")
 global.downbutton = ord("S")
 global.leftbutton = ord("A")
 global.rightbutton = ord("D")
 
 
-
+//updating controls 
+scr_updatecontrols()
 
 
 //room ids
