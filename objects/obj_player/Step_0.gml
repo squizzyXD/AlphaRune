@@ -1,9 +1,10 @@
 //runs every frame
 //control
-var up_key = keyboard_check(vk_up)
-var down_key = keyboard_check(vk_down)
-var left_key = keyboard_check(vk_left)
-var right_key = keyboard_check(vk_right)
+//control
+var up_key = keyboard_check(vk_up) or keyboard_check(ord("W"))
+var down_key = keyboard_check(vk_down) or keyboard_check(ord("S"))
+var left_key = keyboard_check(vk_left) or keyboard_check(ord("A"))
+var right_key = keyboard_check(vk_right) or keyboard_check(ord("D"))
 
 //movement
 if(keyboard_check(vk_shift) or keyboard_check(ord("X"))){
@@ -51,6 +52,20 @@ if(xspd !=  0 or yspd != 0){
 	image_index = 0
 }
 
+//step when move key is being tapped
+if global.upbuttonpressed{
+	image_index = 1
+}
+
+if global.downbuttonpressed{
+	image_index = 1
+}
+if global.leftbuttonpressed{
+	image_index = 1
+}
+if global.rightbuttonpressed{
+	image_index = 1
+}
 //dont shake
 x[0] = round(x[0.1]);
 y[0] = round(y[0.1]);

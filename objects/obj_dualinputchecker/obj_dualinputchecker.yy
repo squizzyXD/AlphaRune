@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_hometowntiles",
+    "path":"sprites/spr_hometowntiles/spr_hometowntiles.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
