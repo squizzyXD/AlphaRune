@@ -7,7 +7,7 @@ old = false
 if global.lang = "en"{
 
 txt1 = [
-	"<<voice=snd_txtger>>hi!",
+	"<<voice=snd_txt>>hi!",
 	"I spent a lot of time on this game...",
 	"I should probably get an A mark.",
 	"<<disablestartstar>><<breakspace=false>><<menu=gersonyes1,gersonno1>>Yes_SEP_No"

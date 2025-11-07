@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":9,
   "conversionMode":0,
-  "duration":22.5161,
+  "duration":22.516125,
   "exportDir":"",
   "name":"mus_muscle",
   "parent":{

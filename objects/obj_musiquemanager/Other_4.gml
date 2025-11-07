@@ -17,3 +17,9 @@ if room = rm_neofun{
 if room = rm_noelle_main{
 	scr_music(mus_noellehouse)
 }
+if room = rm_test{
+	scr_music(mus_Beginning)
+}
+if room = rm_HIM{
+	scr_music(mus_anotherHIM)
+}

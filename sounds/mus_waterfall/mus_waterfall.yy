@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":9,
   "conversionMode":0,
-  "duration":123.49968,
+  "duration":123.49969,
   "exportDir":"",
   "name":"mus_waterfall",
   "parent":{
