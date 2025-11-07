@@ -46,9 +46,6 @@
   "name":"Diddyrune",
   "resources":[
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
-    {"id":{"name":"mControl","path":"objects/mControl/mControl.yy",},},
-    {"id":{"name":"mObjDlg","path":"objects/mObjDlg/mObjDlg.yy",},},
-    {"id":{"name":"mSfx","path":"objects/mSfx/mSfx.yy",},},
     {"id":{"name":"obj_buttons_continue","path":"objects/obj_buttons_continue/obj_buttons_continue.yy",},},
     {"id":{"name":"obj_buttons","path":"objects/obj_buttons/obj_buttons.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
