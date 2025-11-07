@@ -192,18 +192,10 @@ if (menu_active) {
     var _heart_w    = sprite_get_width(spr_menu_heart) * heart_scale;
 
     var base_y = dy;
-	if global.lang != "jp"{
-		var V      = string_height("W")+8;
-	} else{
-		var V      = string_height("W")-46;
-	}
+    var V      = string_height("W")+8;
 
 	var step     = region_w / (n);
-	if global.lang != "jp"{
-		var center_x = region_left + region_w/2 - _heart_w
-	} else{
-		var center_x = region_left + region_w/2 - _heart_w + 8
-	}
+    var center_x = region_left + region_w/2 - _heart_w
 
 	var V_sep = string_height("W");
 
@@ -244,11 +236,7 @@ if (menu_selection < 0) {
         case 1: {
             var dx1 = center_x - tws[0]/2;
 			draw_set_color(c_yellow)
-			if global.lang != "jp"{
-				draw_text_ext(dx1, base_y, menu_options[0], V_sep, menu_wrap_width)
-			} else{
-				draw_text_ext_transformed(dx1, base_y, menu_options[0], V_sep, menu_wrap_width, 25, 0.25, 0)
-			}
+			draw_text_ext(dx1, base_y, menu_options[0], V_sep, menu_wrap_width)
         } break;
         case 2: {
             for (var i = 0; i < 2; i++) {
@@ -259,58 +247,31 @@ if (menu_selection < 0) {
 					stepFix = 1;
 				}
                 var dx2 = center_x + ((step/2)-_heart_w)*(stepFix) - tws[i]/2;
-				if global.lang != "jp"{
-					draw_text_ext(dx2, base_y, menu_options[i], V_sep, menu_wrap_width)
-				} else{
-					draw_text_ext_transformed(dx2, base_y, menu_options[i], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-				}
+                draw_text_ext(dx2, base_y, menu_options[i], V_sep, menu_wrap_width)
             }
         } break;
         case 3: {
             var dx_top = center_x - tws[1]/2;
-			if global.lang != "jp"{
-				draw_text_ext(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width)
-	            var dx_bl  = center_x - step - tws[0]/2;
-				draw_text_ext(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width)
-	            var dx_br  = center_x + step - tws[2]/2;
-				draw_text_ext(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width)
-			} else{
-				draw_text_ext_transformed(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-	            var dx_bl  = center_x - step - tws[0]/2;
-				draw_text_ext_transformed(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-	            var dx_br  = center_x + step - tws[2]/2;
-				draw_text_ext_transformed(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+			draw_text_ext(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width)
+            var dx_bl  = center_x - step - tws[0]/2;
+			draw_text_ext(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width)
+            var dx_br  = center_x + step - tws[2]/2;
+			draw_text_ext(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width)
         } break;
         case 4: {
-			if global.lang != "jp"{
-	            var dx_t = center_x - tws[1]/2;
-				draw_text_ext(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width)
-	            var dx_l = center_x - step - tws[0]/2;
-				draw_text_ext(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width)
-	            var dx_r = center_x + step - tws[2]/2;
-				draw_text_ext(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width)
-	            var dx_b = center_x - tws[3]/2;
-				draw_text_ext(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width)
-			} else{
-				var dx_t = center_x - tws[1]/2;
-				draw_text_ext_transformed(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-	            var dx_l = center_x - step - tws[0]/2;
-				draw_text_ext_transformed(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-	            var dx_r = center_x + step - tws[2]/2;
-				draw_text_ext_transformed(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-	            var dx_b = center_x - tws[3]/2;
-				draw_text_ext_transformed(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+            var dx_t = center_x - tws[1]/2;
+			draw_text_ext(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width)
+            var dx_l = center_x - step - tws[0]/2;
+			draw_text_ext(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width)
+            var dx_r = center_x + step - tws[2]/2;
+			draw_text_ext(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width)
+            var dx_b = center_x - tws[3]/2;
+			draw_text_ext(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width)
         } break;
         default: {
             for (var i = 0; i < n; i++) {
                 var dxn = region_left + step*(i+1) - tws[i]/2;
-				if global.lang != "jp"{
-					draw_text_ext(dxn, base_y, menu_options[i], V_sep, menu_wrap_width)
-				} else{
-					draw_text_ext_transformed(dxn, base_y, menu_options[i], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-				}
+				draw_text_ext(dxn, base_y, menu_options[i], V_sep, menu_wrap_width)
             }
         } break;
     }
@@ -325,11 +286,7 @@ if (menu_selection < 0) {
                                 heart_scale, heart_scale, 0, c_white, 1);
                 draw_set_color(c_yellow);
             } else draw_set_color(c_white);
-			if global.lang != "jp"{
-				draw_text_ext(dx1, base_y, menu_options[0], V_sep, menu_wrap_width)
-			} else{
-				draw_text_ext_transformed(dx1, base_y, menu_options[0], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+			draw_text_ext(dx1, base_y, menu_options[0], V_sep, menu_wrap_width)
         } break;
 
         case 2: for (var i = 0; i < 2; i++) {
@@ -346,145 +303,74 @@ if (menu_selection < 0) {
                                 heart_scale, heart_scale, 0, c_white, 1);
                 draw_set_color(c_yellow);
             } else draw_set_color(c_white);
-			if global.lang != "jp"{
-				draw_text_ext(dx2, base_y, menu_options[i], V_sep, menu_wrap_width)
-			} else{
-				draw_text_ext_transformed(dx2, base_y, menu_options[i], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+			draw_text_ext(dx2, base_y, menu_options[i], V_sep, menu_wrap_width)
         } break;
 
         case 3: {
-			if global.lang != "jp"{
-	            var dx_top = center_x - tws[1]/2;
-	            if (1 == menu_selection) {
-	                var hx = dx_top - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - (V/2)) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width)
+            var dx_top = center_x - tws[1]/2;
+            if (1 == menu_selection) {
+                var hx = dx_top - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - (V/2)) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width)
 
-	            var dx_bl = center_x - step - tws[0]/2;
-	            if (0 == menu_selection) {
-	                var hx = dx_bl - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width)
+            var dx_bl = center_x - step - tws[0]/2;
+            if (0 == menu_selection) {
+                var hx = dx_bl - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width)
 
-	            var dx_br = center_x + step - tws[2]/2;
-	            if (2 == menu_selection) {
-	                var hx = dx_br - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width)
-			} else{
-				var dx_top = center_x - tws[1]/2;
-	            if (1 == menu_selection) {
-	                var hx = dx_top - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - (V/2)) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_top, base_y - (V/2) - 2, menu_options[1], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-
-	            var dx_bl = center_x - step - tws[0]/2;
-	            if (0 == menu_selection) {
-	                var hx = dx_bl - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_bl, base_y, menu_options[0], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-
-	            var dx_br = center_x + step - tws[2]/2;
-	            if (2 == menu_selection) {
-	                var hx = dx_br - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+            var dx_br = center_x + step - tws[2]/2;
+            if (2 == menu_selection) {
+                var hx = dx_br - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y +2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_br, base_y, menu_options[2], V_sep, menu_wrap_width)
         } break;
 
         case 4: {
-			if global.lang != "jp"{
-	            var dx_t = center_x - tws[1]/2;
-	            if (1 == menu_selection) {
-	                var hx = dx_t - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - V+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width)
+            var dx_t = center_x - tws[1]/2;
+            if (1 == menu_selection) {
+                var hx = dx_t - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - V+2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width)
 
-	            var dx_l = center_x - step - tws[0]/2;
-	            if (0 == menu_selection) {
-	                var hx = dx_l - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width)
+            var dx_l = center_x - step - tws[0]/2;
+            if (0 == menu_selection) {
+                var hx = dx_l - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width)
 
-	            var dx_r = center_x + step - tws[2]/2;
-	            if (2 == menu_selection) {
-	                var hx = dx_r - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width)
+            var dx_r = center_x + step - tws[2]/2;
+            if (2 == menu_selection) {
+                var hx = dx_r - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width)
 
-	            var dx_b = center_x - tws[3]/2;
-	            if (3 == menu_selection) {
-	                var hx = dx_b - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y + V+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width)
-			} else{
-				var dx_t = center_x - tws[1]/2;
-	            if (1 == menu_selection) {
-	                var hx = dx_t - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y - V+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_t, base_y - V, menu_options[1], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-
-	            var dx_l = center_x - step - tws[0]/2;
-	            if (0 == menu_selection) {
-	                var hx = dx_l - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_l, base_y, menu_options[0], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-
-	            var dx_r = center_x + step - tws[2]/2;
-	            if (2 == menu_selection) {
-	                var hx = dx_r - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_r, base_y, menu_options[2], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-
-	            var dx_b = center_x - tws[3]/2;
-	            if (3 == menu_selection) {
-	                var hx = dx_b - _heart_w - padding;
-	                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y + V+2) + heart_yoff,
-	                                heart_scale, heart_scale, 0, c_white, 1);
-	                draw_set_color(c_yellow);
-	            } else draw_set_color(c_white);
-				draw_text_ext_transformed(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width, 0.25, 0.25, 0)
-			}
+            var dx_b = center_x - tws[3]/2;
+            if (3 == menu_selection) {
+                var hx = dx_b - _heart_w - padding;
+                draw_sprite_ext(spr_menu_heart, 0, hx + heart_xoff, (base_y + V+2) + heart_yoff,
+                                heart_scale, heart_scale, 0, c_white, 1);
+                draw_set_color(c_yellow);
+            } else draw_set_color(c_white);
+			draw_text_ext(dx_b, base_y + V, menu_options[3], V_sep, menu_wrap_width)
         } break;
 
         default: {
@@ -496,9 +382,7 @@ if (menu_selection < 0) {
                                     heart_scale, heart_scale, 0, c_white, 1);
                     draw_set_color(c_yellow);
                 } else draw_set_color(c_white);
-				if global.lang != "jp"{
-					draw_text_transformed(dxn, base_y, menu_options[i], 0.25, 0.25, 0);
-				}
+                draw_text(dxn, base_y, menu_options[i]);
             }
         } break;
     }

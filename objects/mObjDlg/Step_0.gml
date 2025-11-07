@@ -279,7 +279,6 @@ if (menu_active) {
 				if (is_callable(d_onEnd)) {
 				    d_onEnd();
 				}
-				obj_player.can_move = true
                 instance_destroy();
             } else {
                 text_char_index = 0; text_timer = 0; displayed_text = "";
@@ -428,7 +427,6 @@ if((input_advance&&text_done)||(auto_advance&&text_done)) && !menu_active{
 		if (is_callable(d_onEnd)) {
 		    d_onEnd();
 		}
-		obj_player.can_move = true
 		instance_destroy();
 	} else {
         text_char_index=0; text_timer=0; displayed_text=""; text_done=false;
@@ -452,4 +450,4 @@ else if (text_done && !menu_active) {
             break;
         }
     }
-}
+} 

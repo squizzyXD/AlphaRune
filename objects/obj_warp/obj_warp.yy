@@ -9,8 +9,8 @@
   "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"func",
-    "path":"folders/Objects/func.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,5 +35,5 @@
     "path":"sprites/spr_warp/spr_warp.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

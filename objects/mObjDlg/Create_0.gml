@@ -1,6 +1,6 @@
 /// CREATE EVENT
-if !variable_global_exists("run_map") global.run_map = ds_map_create();
-if !variable_global_exists("menu_fn_map") global.menu_fn_map = ds_map_create();
+global.run_map = ds_map_create();
+global.menu_fn_map = ds_map_create();
 
 text_lines = [
     "I'm the original    <<highlight=dw_yellow&hasshadow=true&h_shadow=dw_yellow>>Starwalker",
@@ -750,18 +750,14 @@ char_anim_frame   = 0;
 dialogue_sprite   = dlg_darkworld;
 box_visible       = true;
 char_visible      = true;
-if global.lang != "jp"{
-	default_font = fnt_main;
-} else{
-	default_font = fnt_main_jp
-}
+default_font = fnt_main;
 
 voice_enabled = true;
-default_sound     = snd_txt;
+default_sound     = vc_text;
 sound_vol = 1;
 sound_pitch = 1;
 sound_loop = false;
-sound_interrupt = false;
+sound_interrupt = true;
 
 base_char_w = 58;
 base_char_h = 58;
@@ -797,11 +793,7 @@ unskippable    = false;
 w_padding      = (char_sprite != spr_none && char_visible) ? box_wrap_spr : box_wrap_none;
 wrap_w         = box_width + w_padding;
 
-if global.lang != "jp"{
-	menu_font = fnt_main;
-} else{
-	menu_font = fnt_main_jp
-}
+menu_font = fnt_dialogue;
 menu_active    = false;
 menu_options   = [];
 menu_fns       = [];
@@ -953,11 +945,7 @@ if (is_array(raw_line) && array_length(raw_line) == 3) {
 }
 
     var font_asset = default_font;
-	if global.lang != "jp"{
-		var base_size  = 8;
-	} else{
-		var base_size  = 2;
-	}
+    var base_size  = 8;
     var color      = c_white;
 	var hasshadow = false;
 	// check once before to see if light world or uhh dark world
@@ -975,13 +963,7 @@ if (is_array(raw_line) && array_length(raw_line) == 3) {
     var char_sp    = 1;
     var xoff = 0, yoff = 0;
     var font_size = base_size;
-	if global.lang != "jp"{
-		var bullet_w   = measure_str("* ", font_asset, base_size);
-		star = "* "
-	} else{
-		var bullet_w   = measure_str("* ", font_asset, base_size);
-		star = "＊ "
-	}
+    var bullet_w   = measure_str("* ", font_asset, base_size);
 	
 	// ok im genuinely loosing it what the hell i've spent about 1 hour tinking of where to put this
 	var curSnd = default_sound;
@@ -1079,7 +1061,7 @@ while (i <= string_length(raw_line)) {
                 if (tokens[f].type == "flag" && tokens[f].flag == "disablestartstar") disable_start_star = true;
             }
             if (!disable_start_star) {
-                array_push(out, { type: "char", char: star, fucksound: true, insta: fastReveal, color: color, hasshad: hasshadow, shad_color: shadow_color, hlight: {h1: daHighlight.h1,h2: daHighlight.h2,enabled: daHighlight.enabled}, hshadow: {s1: daHShadow.s1,s2: daHShadow.s2,enabled: daHShadow.enabled}, font: default_font, font_size: base_size, char_speed: 1, xoff: 0, yoff: 0, shake_type: "none", shake_intensity: 0, shake_offset: 0, effect: "none", effect_speed: 1, effect_radius: 1 });
+                array_push(out, { type: "char", char: "* ", fucksound: true, insta: fastReveal, color: color, hasshad: hasshadow, shad_color: shadow_color, hlight: {h1: daHighlight.h1,h2: daHighlight.h2,enabled: daHighlight.enabled}, hshadow: {s1: daHShadow.s1,s2: daHShadow.s2,enabled: daHShadow.enabled}, font: default_font, font_size: base_size, char_speed: 1, xoff: 0, yoff: 0, shake_type: "none", shake_intensity: 0, shake_offset: 0, effect: "none", effect_speed: 1, effect_radius: 1 });
             } else {
                 array_push(out, { type: "indent", width: bullet_w });
             }

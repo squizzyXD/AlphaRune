@@ -8,8 +8,8 @@
   "name":"obj_interact",
   "overriddenProperties":[],
   "parent":{
-    "name":"func",
-    "path":"folders/Objects/func.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,5 +34,5 @@
     "path":"sprites/spr_interact/spr_interact.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

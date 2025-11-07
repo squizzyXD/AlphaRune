@@ -9,11 +9,11 @@
   "name":"obj_dualinputchecker",
   "overriddenProperties":[],
   "parent":{
-    "name":"func",
-    "path":"folders/Objects/func.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pc",
-    "path":"sprites/spr_pc/spr_pc.yy",
+    "name":"spr_hometowntiles",
+    "path":"sprites/spr_hometowntiles/spr_hometowntiles.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -8,8 +8,8 @@
   "name":"mSfx",
   "overriddenProperties":[],
   "parent":{
-    "name":"func",
-    "path":"folders/Objects/func.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -9,8 +9,8 @@
   "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"characters",
-    "path":"folders/Objects/characters.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -31,12 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ynoellewd",
-    "path":"sprites/spr_ynoellewd/spr_ynoellewd.yy",
+    "name":"spr_noellewd",
+    "path":"sprites/spr_noellewd/spr_noellewd.yy",
   },
   "spriteMaskId":{
-    "name":"spr_ynoellewd",
-    "path":"sprites/spr_ynoellewd/spr_ynoellewd.yy",
+    "name":"spr_noellewd",
+    "path":"sprites/spr_noellewd/spr_noellewd.yy",
   },
   "visible":true,
 }
