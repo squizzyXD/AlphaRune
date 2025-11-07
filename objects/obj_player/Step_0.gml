@@ -1,11 +1,12 @@
 /// @description Runs every frame
 //control
-var up    = keyboard_check_pressed(ord("W"))  and can_move = true;
-var down  = keyboard_check_pressed(ord("S"))   and can_move = true;
-var left  = keyboard_check_pressed(ord("A"))   and can_move = true;
-var right = keyboard_check_pressed(ord("D"))  and can_move = true;
-var sprint= global.sprintbuttonpressed
-var select= global.selectbuttonpressed
+var cEnabled = mControl.isControlEnabled("player")
+var up    = global.upbuttonpressed && cEnabled and can_move = true;
+var down  = global.downbuttonpressed && cEnabled and can_move = true;
+var left  = global.leftbuttonpressed && cEnabled and can_move = true;
+var right = global.rightbuttonpressed && cEnabled and can_move = true;
+var sprint= global.sprintbuttonpressed && cEnabled;
+var select= global.selectbuttonpressed && cEnabled;
 
 if instance_exists(mObjDlg){
 	can_move = false
@@ -64,13 +65,13 @@ if can_move = true{
 
 //animate
 if(xspd > 0){
-	sprite_index = spr_noellewr
+	sprite_index = spr_ynoellewr
 } else if(xspd < 0){
-	sprite_index = spr_noellewl
+	sprite_index = spr_ynoellewl
 } else if(yspd > 0){
-	sprite_index = spr_noellewd
+	sprite_index = spr_ynoellewd
 } else if(yspd < 0){
-	sprite_index = spr_noellewu
+	sprite_index = spr_ynoellewu
 }
 
 if(xspd != 0 or yspd != 0) and can_move = true{
@@ -85,16 +86,16 @@ x[0] = round(x[0.1])
 y[0] = round(y[0.1])
 
 //keep track of direction facing
-if(sprite_index = spr_noellewd){
+if(sprite_index = spr_ynoellewd){
 	facing_direction = 2
 }
-if(sprite_index = spr_noellewu){
+if(sprite_index = spr_ynoellewu){
 	facing_direction = 3
 }
-if(sprite_index = spr_noellewr){
+if(sprite_index = spr_ynoellewr){
 	facing_direction = 0
 }
-if(sprite_index = spr_noellewl){
+if(sprite_index = spr_ynoellewl){
 	facing_direction = 1
 }
 
@@ -138,17 +139,17 @@ if (tap){
 	
 	if xspd = 0 and yspd = 0{
 		if global.upbuttonpressed1{
-			sprite_index = spr_noellewu
+			sprite_index = spr_ynoellewu
 		}
 		if global.downbuttonpressed1{
-			sprite_index = spr_noellewd
+			sprite_index = spr_ynoellewd
 		}
 	
 		if global.leftbuttonpressed1{
-			sprite_index = spr_noellewl
+			sprite_index = spr_ynoellewl
 		}
 		if global.rightbuttonpressed1{
-			sprite_index = spr_noellewr
+			sprite_index = spr_ynoellewr
 		}
 	}
 	
@@ -156,5 +157,25 @@ if (tap){
 
 //interact
 if global.selectbuttonpressed  and can_move = true{
+
+//down
+if facing_direction = 2{
+	instance_create_depth(x, y+16, depth-1, obj_interactlaser_v)
+}
+
+//up
+if facing_direction = 3{
+	instance_create_depth(x, y, depth-1, obj_interactlaser_v)
+}
+
+//right
+if facing_direction = 0{
+	instance_create_depth(x+8, y+6, depth-1, obj_interactlaser_h)
+}
+
+//left
+if facing_direction = 1{
+	instance_create_depth(x-8, y+6, depth-1, obj_interactlaser_h)
+}
 
 }

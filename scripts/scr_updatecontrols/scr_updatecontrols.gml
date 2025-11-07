@@ -5,10 +5,10 @@ if file_exists("controls.ini"){
 	obj_title.cancelkey = ini_read_string("Save", "Cancel", "X")
 	obj_title.sprintkey = ini_read_string("Save", "Sprint", "X")
 	obj_title.menukey = ini_read_string("Save", "Menu", "C")
-	obj_title.upkey = ini_read_string("Save", "Select", "W")
-	obj_title.downkey = ini_read_string("Save", "Select", "S")
-	obj_title.leftkey = ini_read_string("Save", "Select", "A")
-	obj_title.rightkey = ini_read_string("Save", "Select", "D")
+	obj_title.upkey = ini_read_string("Save", "Up", "W")
+	obj_title.downkey = ini_read_string("Save", "Down", "S")
+	obj_title.leftkey = ini_read_string("Save", "Left", "A")
+	obj_title.rightkey = ini_read_string("Save", "Right", "D")
 }
 
 global.selectbutton = ord(obj_title.selectkey)

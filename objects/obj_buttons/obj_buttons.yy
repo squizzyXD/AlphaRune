@@ -10,8 +10,8 @@
   "name":"obj_buttons",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"title",
+    "path":"folders/Objects/title.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_buttons",
-    "path":"sprites/spr_buttons/spr_buttons.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
