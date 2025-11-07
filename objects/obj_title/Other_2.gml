@@ -124,7 +124,7 @@ if global.party_exists = true{
 	}
 }
 
-layer_depth(layer_get_id("Dialogue"), -999)
+
 
 //control manager code
 
