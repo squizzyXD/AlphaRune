@@ -1,5 +1,5 @@
 target_x = 220
-target_y = 203
+target_y = 183
 target_room = rm_paps
 facing = 3
 //0 = right

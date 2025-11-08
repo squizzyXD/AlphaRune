@@ -23,3 +23,6 @@ if room = rm_test{
 if room = rm_HIM{
 	scr_music(mus_anotherHIM)
 }
+if room = rm_white{
+	scr_music(mus_tragic)
+}
