@@ -19,6 +19,7 @@
     {"name":"inst_2FCB3BFD","path":"rooms/rm_paps/rm_paps.yy",},
     {"name":"inst_6057B9B8","path":"rooms/rm_paps/rm_paps.yy",},
     {"name":"inst_144B3155","path":"rooms/rm_paps/rm_paps.yy",},
+    {"name":"inst_206316C5","path":"rooms/rm_paps/rm_paps.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,6 +43,7 @@
     {"$GMRInstanceLayer":"","%Name":"Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_EA79A34","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EA79A34","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":220.0,"y":229.0,},
         {"$GMRInstance":"v4","%Name":"inst_2FCB3BFD","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FCB3BFD","objectId":{"name":"obj_save","path":"objects/obj_save/obj_save.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":265.0,"y":104.0,},
+        {"$GMRInstance":"v4","%Name":"inst_206316C5","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_206316C5","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.7,"scaleY":1.0,"x":197.0,"y":77.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Furniture","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_5350CE47","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_5350CE47","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},"x":60.0,"y":112.0,},
