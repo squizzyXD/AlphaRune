@@ -59,7 +59,9 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"eye.webp","CopyToMask":-1,"filePath":"datafiles","name":"eye.webp","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -100,6 +102,7 @@
     {"id":{"name":"obj_texttest","path":"objects/obj_texttest/obj_texttest.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},},
+    {"id":{"name":"rm_eye","path":"rooms/rm_eye/rm_eye.yy",},},
     {"id":{"name":"rm_HIM","path":"rooms/rm_HIM/rm_HIM.yy",},},
     {"id":{"name":"rm_large","path":"rooms/rm_large/rm_large.yy",},},
     {"id":{"name":"rm_neofun","path":"rooms/rm_neofun/rm_neofun.yy",},},
@@ -114,6 +117,7 @@
     {"id":{"name":"scr_party","path":"scripts/scr_party/scr_party.yy",},},
     {"id":{"name":"scr_txtb","path":"scripts/scr_txtb/scr_txtb.yy",},},
     {"id":{"name":"scr_updatecontrols","path":"scripts/scr_updatecontrols/scr_updatecontrols.yy",},},
+    {"id":{"name":"mus_5469","path":"sounds/mus_5469/mus_5469.yy",},},
     {"id":{"name":"mus_anotherHIM","path":"sounds/mus_anotherHIM/mus_anotherHIM.yy",},},
     {"id":{"name":"mus_authenticaton","path":"sounds/mus_authenticaton/mus_authenticaton.yy",},},
     {"id":{"name":"mus_Beginning","path":"sounds/mus_Beginning/mus_Beginning.yy",},},
@@ -147,6 +151,8 @@
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
     {"id":{"name":"spr_demonstationguy","path":"sprites/spr_demonstationguy/spr_demonstationguy.yy",},},
+    {"id":{"name":"spr_eye","path":"sprites/spr_eye/spr_eye.yy",},},
+    {"id":{"name":"spr_eyesmoving","path":"sprites/spr_eyesmoving/spr_eyesmoving.yy",},},
     {"id":{"name":"spr_fade","path":"sprites/spr_fade/spr_fade.yy",},},
     {"id":{"name":"spr_fireman","path":"sprites/spr_fireman/spr_fireman.yy",},},
     {"id":{"name":"spr_fountain_sepia","path":"sprites/spr_fountain_sepia/spr_fountain_sepia.yy",},},
@@ -215,6 +221,7 @@
     {"roomId":{"name":"rm_noelle_main","path":"rooms/rm_noelle_main/rm_noelle_main.yy",},},
     {"roomId":{"name":"rm_HIM","path":"rooms/rm_HIM/rm_HIM.yy",},},
     {"roomId":{"name":"rm_white","path":"rooms/rm_white/rm_white.yy",},},
+    {"roomId":{"name":"rm_eye","path":"rooms/rm_eye/rm_eye.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

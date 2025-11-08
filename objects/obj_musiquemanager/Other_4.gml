@@ -26,3 +26,6 @@ if room = rm_HIM{
 if room = rm_white{
 	scr_music(mus_tragic)
 }
+if room = rm_eye{
+	scr_music(mus_5469)
+}
