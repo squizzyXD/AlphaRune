@@ -19,15 +19,15 @@ endpress = false
 ini_open("dessappearance.ini")
 facing_direction = ini_read_real("Save1", "facing", 2)
 if facing_direction = 2{
-	sprite_index = spr_ynoellewd
+	sprite_index = spr_kriswd
 }
 if facing_direction = 1{
-	sprite_index = spr_ynoellewl
+	sprite_index = spr_kriswl
 }
 if facing_direction = 0{
-	sprite_index = spr_ynoellewr
+	sprite_index = spr_kriswr
 }if facing_direction = 3{
-	sprite_index = spr_ynoellewu
+	sprite_index = spr_kriswu
 }
 ini_close()
 

@@ -65,13 +65,13 @@ if can_move = true{
 
 //animate
 if(xspd > 0){
-	sprite_index = spr_ynoellewr
+	sprite_index = spr_kriswr
 } else if(xspd < 0){
-	sprite_index = spr_ynoellewl
+	sprite_index = spr_kriswl
 } else if(yspd > 0){
-	sprite_index = spr_ynoellewd
+	sprite_index = spr_kriswd
 } else if(yspd < 0){
-	sprite_index = spr_ynoellewu
+	sprite_index = spr_kriswu
 }
 
 if(xspd != 0 or yspd != 0) and can_move = true{
@@ -86,16 +86,16 @@ x[0] = round(x[0.1])
 y[0] = round(y[0.1])
 
 //keep track of direction facing
-if(sprite_index = spr_ynoellewd){
+if(sprite_index = spr_kriswd){
 	facing_direction = 2
 }
-if(sprite_index = spr_ynoellewu){
+if(sprite_index = spr_kriswu){
 	facing_direction = 3
 }
-if(sprite_index = spr_ynoellewr){
+if(sprite_index = spr_kriswr){
 	facing_direction = 0
 }
-if(sprite_index = spr_ynoellewl){
+if(sprite_index = spr_kriswl){
 	facing_direction = 1
 }
 
@@ -139,17 +139,17 @@ if (tap){
 	
 	if xspd = 0 and yspd = 0{
 		if global.upbuttonpressed1{
-			sprite_index = spr_ynoellewu
+			sprite_index = spr_kriswu
 		}
 		if global.downbuttonpressed1{
-			sprite_index = spr_ynoellewd
+			sprite_index = spr_kriswd
 		}
 	
 		if global.leftbuttonpressed1{
-			sprite_index = spr_ynoellewl
+			sprite_index = spr_kriswl
 		}
 		if global.rightbuttonpressed1{
-			sprite_index = spr_ynoellewr
+			sprite_index = spr_kriswr
 		}
 	}
 	

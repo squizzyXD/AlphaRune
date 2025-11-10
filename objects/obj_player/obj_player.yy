@@ -31,12 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ynoellewd",
-    "path":"sprites/spr_ynoellewd/spr_ynoellewd.yy",
+    "name":"spr_kriswd",
+    "path":"sprites/spr_kriswd/spr_kriswd.yy",
   },
   "spriteMaskId":{
-    "name":"spr_ynoellewd",
-    "path":"sprites/spr_ynoellewd/spr_ynoellewd.yy",
+    "name":"spr_kriswd",
+    "path":"sprites/spr_kriswd/spr_kriswd.yy",
   },
   "visible":true,
 }
