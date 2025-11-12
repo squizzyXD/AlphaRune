@@ -31,19 +31,19 @@ if global.party_exists = true{
 //facing
 
 if(facing = 0){
-	obj_player.sprite_index = spr_ynoellewr
+	obj_player.sprite_index = spr_kriswr
 }
 
 if(facing = 1){
-	obj_player.sprite_index = spr_ynoellewl
+	obj_player.sprite_index = spr_kriswl
 }
 
 if(facing = 2){
-	obj_player.sprite_index = spr_ynoellewd
+	obj_player.sprite_index = spr_kriswd
 }
 
 if(facing = 3){
-	obj_player.sprite_index = spr_ynoellewu
+	obj_player.sprite_index = spr_kriswu
 }
 
 //fade out

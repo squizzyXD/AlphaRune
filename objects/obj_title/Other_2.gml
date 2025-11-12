@@ -24,7 +24,7 @@ scr_updatecontrols()
 //party ids
 global.pn1 = -1 //placeholder1
 global.p0 = 0 //susie
-global.p1 = 1 //kris
+global.p1 = 1 //_kris
 global.p2 = 2 //ralsei
 
 //rooms ids
