@@ -5,8 +5,8 @@
   "locked":false,
   "name":"RoomUI",
   "parent":{
-    "name":"Dessapearance",
-    "path":"Dessapearance.yyp",
+    "name":"Dessappearance",
+    "path":"Dessappearance.yyp",
   },
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
